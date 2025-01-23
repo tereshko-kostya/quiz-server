@@ -19,7 +19,8 @@ export class UsersService {
 
             user = await this.usersRepository.create({
                 userId: createDto.userId,
-                username: createDto.username
+                username: createDto.username,
+                image: createDto.image
             });
 
             return user;
